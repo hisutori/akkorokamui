@@ -1,0 +1,38 @@
+name: New instance
+description: Propose a new instance
+labels: 'instance'
+body:
+  - type: input
+    id: url
+    attributes:
+      label: URL
+      placeholder: https://...
+    validations:
+      required: true
+  - type: input
+    id: location
+    attributes:
+      label: Location
+      placeholder: JP
+    validations:
+      required: true
+  - type: dropdown
+    id: http
+    attributes:
+      label: HTTP3?
+      options:
+        - 'Yes'
+        - 'No'
+      default: 0
+    validations:
+      required: true
+  - type: dropdown
+    id: cloudflare
+    attributes:
+      label: Cloudflare?
+      options:
+        - 'Yes'
+        - 'No'
+      default: 0
+    validations:
+      required: true

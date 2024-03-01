@@ -1,0 +1,24 @@
+name: Upload akkorokamui.zip and akkorokamui-docker.zip as assets
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  upload:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Zip
+        run: |
+          zip -r akkorokamui-docker.zip src docker docker-compose.yml
+          mv src akkorokamui
+          zip -r akkorokamui.zip akkorokamui
+      - name: Upload
+        uses: softprops/action-gh-release@v1
+        with:
+          files: |
+            akkorokamui.zip
+            akkorokamui-docker.zip
+          token: ${{ secrets.GITHUB_TOKEN }}

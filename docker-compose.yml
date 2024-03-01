@@ -1,0 +1,27 @@
+version: '3'
+services:
+  php:
+    build:
+      dockerfile: docker/php/Dockerfile
+    networks:
+      - internal
+    restart: always
+    security_opt:
+      - no-new-privileges
+
+  nginx:
+    build:
+      dockerfile: docker/nginx/Dockerfile
+    ports:
+      - '8000:8080'
+    networks:
+      - internal
+    links:
+      - php
+    restart: always
+    security_opt:
+      - no-new-privileges
+
+networks:
+  internal:
+    driver: bridge

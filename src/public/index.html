@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+
+        <title>Akkorokamui</title>
+        <meta name="description" content="A modern and lightweight Hackernews frontend." />
+        <link rel="manifest" href="/site.webmanifest" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <link
+            title="Akkorokamui"
+            type="application/opensearchdescription+xml"
+            rel="search"
+            href="/php/opensearch.php"
+        />
+
+        <link rel="icon" href="/img/favicons/favicon192.png" sizes="any" />
+        <link rel="icon" href="/img/favicons/favicon.svg" type="image/svg+xml" />
+        <link rel="apple-touch-startup-image" href="/img/favicons/favicon256.png" />
+
+        <meta name="color-scheme" content="light dark" />
+        <meta name="theme-color" content="#c7534d" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/styles.css" />
+
+        <script async type="module" src="/js/app.js"></script>
+    </head>
+    <body>
+        <header>
+            <a href="/" data-link
+                ><img src="/img/favicons/favicon.svg" alt="home" loading="lazy"
+            /></a>
+            <hgroup>
+                <h2>
+                    <a href="/" data-link>Akkorokamui</a>
+                    <small>v1.0.0</small>
+                </h2>
+                <p>A modern and lightweight Hackernews frontend.</p>
+            </hgroup>
+        </header>
+        <nav>
+            <a href="/" data-link>home</a>
+            <a href="/about" data-link>about</a>
+            <a href="https://github.com/hisutori/akkorokamui" rel="noreferrer">github</a>
+        </nav>
+        <main></main>
+        <footer>
+            <a href="/about" data-link>about</a>
+            <a href="https://github.com/hisutori/akkorokamui" rel="noreferrer">github</a>
+            <a href="/privacy" data-link>privacy</a>
+            <a href="/disclaimer" data-link>disclaimer</a>
+        </footer>
+    </body>
+</html>

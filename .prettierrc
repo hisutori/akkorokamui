@@ -1,0 +1,19 @@
+{
+  "printWidth": 100,
+  "insertPragma": false,
+  "useTabs": false,
+  "tabWidth": 4,
+  "htmlWhitespaceSensitivity": "css",
+  "semi": true,
+  "singleQuote": true,
+  "bracketSpacing": true,
+  "embeddedLanguageFormatting": "auto",
+  "overrides": [
+    {
+      "files": ["*.md", "*.yml", "*.prettierrc"],
+      "options": {
+        "tabWidth": 2
+      }
+    }
+  ]
+}

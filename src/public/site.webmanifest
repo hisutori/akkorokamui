@@ -1,0 +1,68 @@
+{
+    "name": "Akkorokamui",
+    "short_name": "Akkorokamui",
+    "description": "A modern and lightweight Hackernews frontend.",
+
+    "start_url": "/",
+    "scope": "/",
+    "theme_color": "#c7534d",
+    "background_color": "#232323",
+    "display": "standalone",
+
+    "icons": [
+        {
+            "src": "/img/favicons/favicon48.png",
+            "type": "image/png",
+            "sizes": "48x48",
+            "purpose": "any"
+        },
+        {
+            "src": "/img/favicons/favicon72.png",
+            "type": "image/png",
+            "sizes": "72x72",
+            "purpose": "any"
+        },
+        {
+            "src": "/img/favicons/favicon96.png",
+            "type": "image/png",
+            "sizes": "96x96",
+            "purpose": "any"
+        },
+        {
+            "src": "/img/favicons/favicon144.png",
+            "type": "image/png",
+            "sizes": "144x144",
+            "purpose": "any"
+        },
+        {
+            "src": "/img/favicons/favicon168.png",
+            "type": "image/png",
+            "sizes": "168x168",
+            "purpose": "any"
+        },
+        {
+            "src": "/img/favicons/favicon192.png",
+            "type": "image/png",
+            "sizes": "192x192",
+            "purpose": "any"
+        },
+        {
+            "src": "/img/favicons/favicon256.png",
+            "type": "image/png",
+            "sizes": "256x256",
+            "purpose": "any"
+        },
+        {
+            "src": "/img/favicons/favicon512.png",
+            "type": "image/png",
+            "sizes": "512x512",
+            "purpose": "any"
+        },
+        {
+            "src": "/img/favicons/favicon.svg",
+            "type": "image/svg+xml",
+            "sizes": "512x512",
+            "purpose": "any"
+        }
+    ]
+}
